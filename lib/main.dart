@@ -12,6 +12,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  var nDonuts = 0;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,10 +23,17 @@ class _MyAppState extends State<MyApp> {
           title: Text('Demo'),
         ),
         body: Center(
-          child: Text('My name is Rebecca'),
+          child: Text('Number of donuts eaten: $nDonuts',
+              style: TextStyle(
+                fontSize: 40.0,
+              )),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: null,
+          onPressed: () {
+            setState(() {
+              nDonuts++;
+            });
+          },
           backgroundColor: Colors.red,
           child: Icon(Icons.add),
         ),
