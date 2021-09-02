@@ -17,30 +17,30 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
+          child: Row(
             // mainAxisSize: MainAxisSize.min,
             // verticalDirection: VerticalDirection.down,
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                height: 100.0,
+                width: 30,
                 color: Colors.white,
                 child: Text('Container 1'),
               ),
               SizedBox(
-                height: 20,
+                width: 30,
               ),
               Container(
-                height: 100.0,
+                width: 30,
                 color: Colors.blue,
                 child: Text('Container 2'),
               ),
               SizedBox(
-                height: 20,
+                width: 30,
               ),
               Container(
-                height: 100.0,
+                width: 30,
                 color: Colors.red,
                 child: Text('Container 3'),
               ),
