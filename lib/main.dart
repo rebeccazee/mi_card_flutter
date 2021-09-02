@@ -33,14 +33,66 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text('STUDENT DEVELOPER',
-                  style: TextStyle(
-                    fontFamily: 'Source Sans Pro',
-                    color: Colors.teal.shade100,
-                    fontSize: 20,
-                    letterSpacing: 2.5,
-                    fontWeight: FontWeight.bold,
-                  ))
+              Text(
+                'STUDENT DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  color: Colors.teal.shade100,
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              // The phone number
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      '+44 123 456 789',
+                      style: TextStyle(
+                        color: Colors.teal.shade500,
+                        fontSize: 20,
+                        fontFamily: 'Source Sans Pro',
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              // THe email address
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'ryz283@gmail.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade500,
+                        fontSize: 20,
+                        fontFamily: 'Source Sans Pro',
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
