@@ -6,36 +6,25 @@ void main() {
   );
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  var nDonuts = 0;
+class MyApp extends StatelessWidget {
+  const MyApp({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.red,
-          title: Text('Demo'),
-        ),
-        body: Center(
-          child: Text('Number of donuts eaten: $nDonuts',
-              style: TextStyle(
-                fontSize: 40.0,
-              )),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            setState(() {
-              nDonuts++;
-            });
-          },
-          backgroundColor: Colors.red,
-          child: Icon(Icons.add),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Container(
+            height: 100.0,
+            width: 100.0,
+            margin: EdgeInsets.only(left: 30),
+            padding: EdgeInsets.all(20),
+            color: Colors.white,
+            child: Text('Hello'),
+          ),
         ),
       ),
     );
