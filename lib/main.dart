@@ -27,11 +27,20 @@ class MyApp extends StatelessWidget {
               Text(
                 'Rebecca Zee',
                 style: TextStyle(
+                  fontFamily: 'Pacifico',
                   fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Text('STUDENT DEVELOPER',
+                  style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    color: Colors.teal.shade100,
+                    fontSize: 20,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold,
+                  ))
             ],
           ),
         ),
